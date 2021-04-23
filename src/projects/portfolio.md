@@ -20,3 +20,5 @@ Aplicação simples com o desígnio simples de mostrar os projectos realizados p
 # Veredicto
 
 Projecto altamente inspirado pelos vídeos do Net Ninja no YouTube, referência <a href="https://www.youtube.com/watch?v=Qms4k6y7OgI&list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB">**aqui**</a>. 
+
+Algumas animações CSS desarranjaram-se na transição entre desenvolvimento e produção, aquando da hospedagem do portfólio no Netlify. A rever.

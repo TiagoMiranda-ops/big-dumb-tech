@@ -20,8 +20,3 @@ Elaboração de uma página recorrendo à framework Angular, na versão 10, prev
 # Veredicto
 
 Este projecto é, no fundo, uma relíquia, incluindo-se aqui por dever bibliográfico. Apresenta falhas e omissões, intocada desde então por ser, aos olhos do seu autor, matéria radioactiva.
-
-
-
-
-

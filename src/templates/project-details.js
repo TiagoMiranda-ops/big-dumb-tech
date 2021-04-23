@@ -20,7 +20,7 @@ const ProjectDetails = ({ data }) => {
         </div>
         <div className={text} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-
+      <hr />
     </Layout>
   )
 }

@@ -5,7 +5,7 @@ import '../styles/global.css'
 
 const Layout = ({ children }) => {
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query SiteInfoCopy {
         site {
           siteMetadata {
@@ -14,19 +14,19 @@ const Layout = ({ children }) => {
         }
       }`)
 
-    const { copyright } = data.site.siteMetadata
+  const { copyright } = data.site.siteMetadata
 
-    return (
-        <div className="layout">
-            <Navbar />
-            <div className="content">
-                {children}
-            </div>
-            <footer>
-                <p>{copyright}</p>
-            </footer>
-        </div>
-    )
+  return (
+    <div className="layout">
+      <Navbar />
+      <div className="content">
+        {children}
+      </div>
+      <footer>
+        <p>{copyright}</p>
+      </footer>
+    </div>
+  )
 }
 
 export default Layout
