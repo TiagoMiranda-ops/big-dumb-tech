@@ -1,0 +1,68 @@
+.details h2 {
+    font-size: 3.5em;
+    margin-top: 80px;
+  }
+  .details h3 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .details .cancel {
+    float: right;
+  }
+  .text {
+    margin-top: 40px;
+  }
+  .featured {
+    margin-bottom: 40px;
+  }
+  .projectImage {
+    border: 5px solid rgba(116, 100, 11, 0.692);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0 3px black;
+  }
+  .cancel {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    outline: none;
+    background-color: rgba(230, 72, 45, 0.692);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 9px rgba(116, 41, 11, 0.692), 0px 9px 0 5px black;
+    position: relative;
+}
+
+.cancel span {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 -4px 3px rgba(3, 3, 3, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    transform: perspective(300px) rotateX(35deg);
+    display: inline-block;
+}
+
+.cancel:hover {
+    background: linear-gradient(#8f210e, #cc3318);
+    position: relative;
+    transition: top, left, right, bottom, 300ms ease-in-out;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+.cancel:active {
+    background-color: red;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 1px rgba(116, 41, 11, 0.692), 0px 5px 0 5px black;
+    animation-play-state: paused;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(4px);
+      box-shadow: inset 0 1px 0 #FFE5C4, 0 5px rgba(116, 41, 11, 0.692), 0px 5px 0 5px black;
+  }
+}

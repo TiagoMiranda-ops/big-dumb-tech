@@ -1,0 +1,117 @@
+.separator {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: auto;
+    border-width: 1px;
+    width: 35%;
+    border-style: solid;
+  }
+.about {
+    text-align: justify;
+  }
+  .about > h2 {
+    font-size: 2.5em;
+    margin-top: 80px;
+  }
+  .about > h3 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+.download {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: rgba(35, 110, 12, 0.945);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 9px rgba(15, 77, 7, 0.692), 0px 9px 0 5px black;
+    position: relative;
+}
+
+.download span {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 0 -4px 3px rgba(209, 191, 191, 0), 0 3px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    transform: perspective(300px) rotateX(10deg);
+    display: inline-block;
+}
+
+.download:hover {
+    background: linear-gradient(#1a5f09, #0a8a1f);
+    position: relative;
+    transition: top, left, right, bottom, 300ms ease-in-out;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+.download:active {
+    background-color: green;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 1px rgba(15, 77, 7, 0.692), 0px 5px 0 5px black;
+    animation-play-state: paused;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(4px);
+        box-shadow: inset 0 1px 0 #FFE5C4, 0 5px rgba(15, 77, 7, 0.692), 0px 5px 0 5px black;
+    }
+  }
+
+.git {
+    background-color: rgba(112, 12, 59, 0.945);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 9px rgba(83, 8, 37, 0.692), 0px 9px 0 5px black;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.git span {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 0 -4px 3px rgba(209, 191, 191, 0), 0 3px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    transform: perspective(300px) rotateX(10deg);
+    display: inline-block;
+}
+
+.git:hover {
+    background: linear-gradient(#66093c, #aa0c56);
+    animation: MoveUpDownGit 1s linear infinite;
+    position: relative;
+    transition: top, left, right, bottom, 300ms ease-in-out;
+}
+
+.git:active {
+    background-color: purple;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 1px rgba(83, 8, 37, 0.692), 0px 5px 0 5px black;
+    animation-play-state: paused;
+}
+
+@keyframes MoveUpDownGit {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(4px);
+        box-shadow: inset 0 1px 0 #FFE5C4, 0 5px rgba(83, 8, 37, 0.692), 0px 5px 0 5px black;
+    }
+  }
