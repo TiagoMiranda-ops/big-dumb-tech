@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
 import Layout from "../components/Layout"
-import { header, btn, jpeg, donkeyFace, css, js, html, php, laravel, node } from "../styles/home.module.css"
+import { header, btn, jpeg } from "../styles/home.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Home = () => {
